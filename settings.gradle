@@ -1,0 +1,3 @@
+rootProject.name = "Tridy_Android"
+include ':app'
+
