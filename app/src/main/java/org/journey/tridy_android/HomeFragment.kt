@@ -13,14 +13,19 @@ import io.reactivex.disposables.Disposable
 import io.reactivex.schedulers.Schedulers
 import org.journey.tridy_android.base.BaseFragment
 import org.journey.tridy_android.databinding.FragmentHomeBinding
+import org.journey.tridy_android.util.AutoClearedValue
 import java.util.concurrent.TimeUnit
 
-class HomeFragment: BaseFragment<FragmentHomeBinding>() {
-    override fun getFragmentBinding(
+class HomeFragment: Fragment() {
+    private var binding by AutoClearedValue<FragmentHomeBinding>()
+
+    override fun onCreateView(
         inflater: LayoutInflater,
-        container: ViewGroup?
-    ): FragmentHomeBinding {
-        return FragmentHomeBinding.inflate(inflater, container, false)
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        binding = FragmentHomeBinding.inflate(inflater, container, false)
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

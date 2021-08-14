@@ -13,7 +13,6 @@ class AutoClearedValue<T: Any>: ReadWriteProperty<Fragment, T>, LifecycleObserve
     override fun getValue(thisRef: Fragment, property: KProperty<*>): T =
         _value ?: throw  IllegalStateException("AutoClearedValue is not available")
 
-
     override fun setValue(thisRef: Fragment, property: KProperty<*>, value: T) {
         thisRef.viewLifecycleOwner.lifecycle.removeObserver(this)
         _value = value
