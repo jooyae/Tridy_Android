@@ -27,6 +27,7 @@ class SplashFragment : BaseFragment<FragmentSplashBinding>() {
         super.onViewCreated(view, savedInstanceState)
         startSplash()
     }
+
     @SuppressLint("CheckResult")
     private fun startSplash(){
         Observable.timer(3, TimeUnit.SECONDS)
