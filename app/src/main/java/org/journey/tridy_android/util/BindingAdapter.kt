@@ -6,7 +6,8 @@ import coil.load
 
 
 object BindingAdapter {
+
     @JvmStatic
-    @BindingAdapter
+    @BindingAdapter("serImageURL")
     fun ImageView.setImageURL(url: String) { load(url) }
 }
