@@ -1,4 +1,4 @@
-package org.journey.tridy_android
+package org.journey.tridy_android.base
 
 import androidx.lifecycle.ViewModel
 import io.reactivex.disposables.CompositeDisposable
