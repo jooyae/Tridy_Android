@@ -1,1 +1,1 @@
-/Users/jooyae/tridy/buildSrc/build/classes/kotlin/main/Versions.class
+/Users/jooyae/StudioProjects/Tridy_Android/buildSrc/build/classes/kotlin/main/Versions.class

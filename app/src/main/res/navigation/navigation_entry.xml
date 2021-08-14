@@ -1,11 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation_entry"
-    app:startDestination="@id/loginFragment">
+    app:startDestination="@id/splashFragment">
 
     <fragment
         android:id="@+id/loginFragment"
-        android:name="org.journey.tridy_android.LoginFragment"
-        android:label="LoginFragment" />
+        android:name="org.journey.tridy_android.login.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_policyFragment"
+            app:destination="@id/policyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="org.journey.tridy_android.splash.SplashFragment"
+        android:label="SplashFragment"
+        tools:layout="@layout/fragment_splash">
+        <action
+            android:id="@+id/action_splashFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/policyFragment"
+        android:name="org.journey.tridy_android.signup.ui.PolicyFragment"
+        android:label="PolicyFragment"
+        tools:layout="@layout/fragment_policy">
+        <action
+            android:id="@+id/action_policyFragment_to_signupFragment"
+            app:destination="@id/signupFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signupFragment"
+        android:name="org.journey.tridy_android.signup.SignupFragment"
+        android:label="SignupFragment"
+        tools:layout="@layout/fragment_signup"/>
+
 </navigation>

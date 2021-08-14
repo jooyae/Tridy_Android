@@ -7,4 +7,15 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="tridy_white">#FFFFFF</color>
+    <color name="tridy_black">#151515</color>
+    <color name="tridy_green">#5BDE70</color>
+    <color name="tridy_gray2">#626262</color>
+    <color name="tridy_gray3">#676767</color>
+    <color name="tridy_gray4">#8A8A8A</color>
+    <color name="tridy_gray5">#C5C5C5</color>
+    <color name="tridy_gray6">#ECECEC</color>
+    <color name="tridy_gray7">#F8F8F8</color>
+    <color name="tridy_gray8">#F9F9F9</color>
+
 </resources>
