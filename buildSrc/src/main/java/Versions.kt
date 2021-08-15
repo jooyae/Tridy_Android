@@ -26,4 +26,8 @@ object Versions {
     const val crypto_version = "1.0.0"
 
     const val swipe_refresh_layout_version = "1.1.0"
+
+    const val KAKAO_SDK_USER_VERSION = "2.5.2"
+
+    const val KAKAO_USERMGMT_VERSION = "1.27.0"
 }
