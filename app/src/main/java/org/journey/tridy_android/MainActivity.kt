@@ -12,6 +12,7 @@ import org.journey.tridy_android.databinding.ActivityMainBinding
 import java.security.MessageDigest
 
 
+
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private lateinit var navController: NavController
@@ -24,6 +25,7 @@ class MainActivity : AppCompatActivity() {
         getAppKeyHash()
     }
     private fun getAppKeyHash() {
+        var keyHash = Utility.getKeyHash(this)
         try {
             val info = packageManager.getPackageInfo(packageName, PackageManager.GET_SIGNATURES)
             for (signature in info.signatures) {

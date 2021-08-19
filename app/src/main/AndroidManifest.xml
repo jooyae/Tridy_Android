@@ -15,6 +15,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Tridy_Android">
         <activity android:name=".MainActivity">
+
         </activity>
         <activity android:name=".EntryActivity">
             <intent-filter>
