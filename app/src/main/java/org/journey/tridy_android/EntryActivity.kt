@@ -5,8 +5,9 @@ import android.view.LayoutInflater
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
+import dagger.hilt.android.AndroidEntryPoint
 import org.journey.tridy_android.databinding.ActivityEntryBinding
-
+@AndroidEntryPoint
 class EntryActivity: AppCompatActivity(){
     private lateinit var binding: ActivityEntryBinding
     private lateinit var navController: NavController
