@@ -1,20 +1,22 @@
 package org.journey.tridy_android.login
 
+import android.text.BoringLayout
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
 import dagger.hilt.android.lifecycle.HiltViewModel
 import org.journey.tridy_android.base.DisposableViewModel
-import org.journey.tridy_android.util.SingleLiveEvent
 import javax.inject.Inject
 
 @HiltViewModel
 class LoginViewModel @Inject constructor(
-): DisposableViewModel(){
+) : DisposableViewModel() {
     private val _accessToken = MutableLiveData<String>()
-    //private val _kakaoLogin = SingleLiveEvent<Session>()
+    private val _kakaoLogin = MutableLiveData<Boolean>()
 
-    val accessToken : LiveData<String>
+    val kakaoLogin: LiveData<Boolean>
+        get() = _kakaoLogin
+
+    val accessToken: LiveData<String>
         get() = _accessToken
 
     private val _refreshToken = MutableLiveData<String>()
@@ -22,7 +24,7 @@ class LoginViewModel @Inject constructor(
         get() = _refreshToken
 
     private val _loginSuccess = MutableLiveData<String>()
-    val loginSuccess : LiveData<String>
+    val loginSuccess: LiveData<String>
         get() = _loginSuccess
 
 }
