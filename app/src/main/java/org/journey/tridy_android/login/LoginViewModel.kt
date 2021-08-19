@@ -10,6 +10,7 @@ import javax.inject.Inject
 class LoginViewModel @Inject constructor(
 ): ViewModel(){
     private val _accessToken = MutableLiveData<String>()
+
     val accessToken : LiveData<String>
         get() = _accessToken
 
