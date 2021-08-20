@@ -6,6 +6,7 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.animation.AnimationUtils
 import androidx.navigation.Navigation
 import io.reactivex.Observable
 import io.reactivex.android.schedulers.AndroidSchedulers
@@ -30,6 +31,8 @@ class SplashFragment : BaseFragment<FragmentSplashBinding>() {
 
     @SuppressLint("CheckResult")
     private fun startSplash(){
+        val animation = AnimationUtils.loadAnimation(context, R.anim.fade_in)
+        binding.imageviewSplashLogo.startAnimation(animation)
         Observable.timer(1, TimeUnit.SECONDS)
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
