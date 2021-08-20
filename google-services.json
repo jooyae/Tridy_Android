@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "693005602584",
+    "project_id": "tridyandroid",
+    "storage_bucket": "tridyandroid.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:693005602584:android:b5faa658051c68b562586d",
+        "android_client_info": {
+          "package_name": "org.journey.tridy_android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "693005602584-jrorcutifa6v5ptp5l0a2ngd82gmaerv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIurVkKBaFqWlPfSHfOhHynBKTgb2WFKM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "693005602584-jrorcutifa6v5ptp5l0a2ngd82gmaerv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -4,4 +4,5 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="tridy_slogan">매일 다른 나만의,\n매일 새로운 여행지</string>
     <string name="kakao_app_key">ddb9cc8d4df4355e66ea553d799524ea</string>
+    <string name="firebase_app_key">560781701178-m2sftupldbl5psjach05pv4aee9btpvq.apps.googleusercontent.com</string>
 </resources>

@@ -91,4 +91,13 @@ dependencies {
     //implementation group: project.kakao_sdk_group, name: 'usermgmt', version: project.kakao_sdk_version
     implementation "com.kakao.sdk:v2-user:${Versions.KAKAO_SDK_USER_VERSION}"
 
+    //Google Firebase
+    implementation platform('com.google.firebase:firebase-bom:28.3.1')
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.firebase:firebase-auth-ktx'
+    implementation 'com.google.android.gms:play-services-auth:19.0.0'
+
+
+
+
 }
