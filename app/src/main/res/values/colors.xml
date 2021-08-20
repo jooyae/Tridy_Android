@@ -18,5 +18,7 @@
     <color name="tridy_gray7">#F8F8F8</color>
     <color name="tridy_gray8">#F9F9F9</color>
     <color name="tridy_gray9">#FBFBFB</color>
+    <color name="tridy_gray10">#BBBBBB</color>
+
 
 </resources>
