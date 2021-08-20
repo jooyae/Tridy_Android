@@ -30,7 +30,7 @@ class SplashFragment : BaseFragment<FragmentSplashBinding>() {
 
     @SuppressLint("CheckResult")
     private fun startSplash(){
-        Observable.timer(3, TimeUnit.SECONDS)
+        Observable.timer(1, TimeUnit.SECONDS)
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe({
