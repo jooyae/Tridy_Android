@@ -52,6 +52,7 @@
         android:backgroundTint="@color/tridy_gray5"
         android:layout_marginTop="60dp"
         android:layout_marginLeft="20dp"
+        android:checked="true"
         android:text="전체 약관에 동의합니다."
         android:fontFamily="@font/notosanskrbold"
         android:textSize="16sp"
@@ -66,6 +67,122 @@
         android:background="@color/tridy_gray9"
         app:layout_constraintTop_toBottomOf="@id/checkbox_policy_agree"
         app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_private_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_width="15dp"
+            tools:layout_height="9dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="21dp"
+            android:background="@drawable/check"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textview_private_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="개인정보 취급방침 (필수)"
+            android:fontFamily="@font/notosanskrregular"
+            android:textSize="14sp"
+            android:textColor="@color/tridy_gray4"
+            android:layout_marginLeft="12dp"
+            app:layout_constraintStart_toEndOf="@id/button_private_check"
+            app:layout_constraintTop_toTopOf="@id/button_private_check"
+            app:layout_constraintBottom_toBottomOf="@id/button_private_check"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textview_private_look"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/notosanskrmedium"
+            android:text="@string/policy_look"
+            android:textSize="14sp"
+            android:textColor="@color/tridy_gray5"
+            app:layout_constraintBottom_toBottomOf="@id/textview_private_check"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.9"
+            app:layout_constraintStart_toEndOf="@id/textview_private_check"
+            app:layout_constraintTop_toTopOf="@id/textview_private_check" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_user_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_width="15dp"
+            tools:layout_height="9dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/check"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/button_private_check" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textview_user_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="사용자 이용약관 (필수)"
+            android:fontFamily="@font/notosanskrregular"
+            android:textSize="14sp"
+            android:textColor="@color/tridy_gray4"
+            android:layout_marginLeft="12dp"
+            app:layout_constraintStart_toEndOf="@id/button_user_check"
+            app:layout_constraintTop_toTopOf="@id/button_user_check"
+            app:layout_constraintBottom_toBottomOf="@id/button_user_check"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textview_user_look"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/notosanskrmedium"
+            android:text="@string/policy_look"
+            android:textSize="14sp"
+            android:textColor="@color/tridy_gray5"
+            app:layout_constraintBottom_toBottomOf="@id/textview_user_check"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.9"
+            app:layout_constraintStart_toEndOf="@id/textview_user_check"
+            app:layout_constraintTop_toTopOf="@id/textview_user_check" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_position_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_width="15dp"
+            tools:layout_height="9dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/check"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/button_user_check" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textview_position_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="위치정보 서비스 이용약관 (선택)"
+            android:fontFamily="@font/notosanskrregular"
+            android:textSize="14sp"
+            android:textColor="@color/tridy_gray4"
+            android:layout_marginLeft="12dp"
+            app:layout_constraintStart_toEndOf="@id/button_position_check"
+            app:layout_constraintTop_toTopOf="@id/button_position_check"
+            app:layout_constraintBottom_toBottomOf="@id/button_position_check"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textview_position_look"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/notosanskrmedium"
+            android:text="@string/policy_look"
+            android:textColor="@color/tridy_gray5"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@id/textview_position_check"
+            app:layout_constraintEnd_toEndOf="@+id/textview_user_look"
+            app:layout_constraintStart_toStartOf="@+id/textview_user_look"
+            app:layout_constraintTop_toTopOf="@id/textview_position_check" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
