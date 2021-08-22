@@ -6,4 +6,5 @@
     <string name="kakao_app_key">ddb9cc8d4df4355e66ea553d799524ea</string>
     <string name="firebase_app_key">560781701178-m2sftupldbl5psjach05pv4aee9btpvq.apps.googleusercontent.com</string>
     <string name="policy_look"><u>보기</u></string>
+    <string name="double_check_nickname"><u>중복확인</u></string>
 </resources>
