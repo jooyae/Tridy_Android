@@ -7,4 +7,7 @@
     <string name="firebase_app_key">560781701178-m2sftupldbl5psjach05pv4aee9btpvq.apps.googleusercontent.com</string>
     <string name="policy_look"><u>보기</u></string>
     <string name="double_check_nickname"><u>중복확인</u></string>
+    <string name="signup_complete">가입을 완료했어요.\n당신의 여행 성향을 알려주세요!</string>
+    <string name="signup_content">여행 성향 테스트를 통해 트리디가 당신에게\n맞춤 여행 정보를 드릴 수 있어요.</string>
+    <string name="signup_test_later"><u>다음에 할래요.</u></string>
 </resources>
