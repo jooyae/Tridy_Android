@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/signupbackground"
+        tools:context=".signup.ui.SignupCompleteFragment">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textview_signup_complete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="66dp"
+            android:fontFamily="@font/notosanskrbold"
+            android:text="@string/signup_complete"
+            android:textColor="@color/tridy_black"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/textview_signup_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textview_signup_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:fontFamily="@font/notosanskrregular"
+            android:text="@string/signup_content"
+            android:textColor="@color/tridy_gray2"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/button_signup_test"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textview_signup_complete" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_signup_test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="360dp"
+            android:background="@drawable/ic_teststart"
+            android:fontFamily="@font/notosanskrbold"
+            android:text="테스트 시작하기"
+            android:textColor="@color/tridy_white"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textview_signup_content" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textview_signup_later"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/notosanskrregular"
+            android:text="@string/signup_test_later"
+            android:textColor="@color/tridy_gray3"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/button_signup_test" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

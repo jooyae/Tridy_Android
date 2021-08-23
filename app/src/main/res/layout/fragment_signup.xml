@@ -5,7 +5,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".signup.SignupFragment">
+    tools:context=".signup.ui.SignupFragment">
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_nickname_return"

@@ -1,4 +1,4 @@
-package org.journey.tridy_android.signup
+package org.journey.tridy_android.signup.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
