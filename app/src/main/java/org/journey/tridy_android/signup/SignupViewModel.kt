@@ -7,4 +7,5 @@ import javax.inject.Inject
 @HiltViewModel
 class SignupViewModel @Inject constructor(
 ): DisposableViewModel() {
+
 }
