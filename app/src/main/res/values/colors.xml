@@ -19,6 +19,10 @@
     <color name="tridy_gray8">#F9F9F9</color>
     <color name="tridy_gray9">#FBFBFB</color>
     <color name="tridy_gray10">#BBBBBB</color>
-
+    <color name="tridy_black_1515">#151515</color>
+    <color name="tridy_black_5353">#535353</color>
+    <color name="tridy_main_green_5bde70">#5BDE70</color>
+    <color name="transparent">#00000000</color>
+    <color name="black_transparent40">#40000000</color>
 
 </resources>

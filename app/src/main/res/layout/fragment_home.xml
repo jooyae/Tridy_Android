@@ -1,8 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
-    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            xmlns:tridy= "http://schemas.android.com/apk/res/org.journey.tridy_android">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textview_temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/notosanskrregular"
+                android:textColor="@color/tridy_black_5353"
+                android:textSize="14sp"
+                android:text="제주시 구좌읍 31°C 맑음"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.13"
+                tools:text="제주시 구좌읍 31°C 맑음" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textview_location_tridy_recommend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/notosanskrregular"
+                android:text="@string/location_tridy_recommend_home"
+                android:textColor="@color/tridy_black_1515"
+                android:textSize="14sp"
+                android:layout_marginTop="14dp"
+                android:layout_marginStart="20dp"
+                app:layout_constraintTop_toBottomOf="@id/textview_temperature"
+                app:layout_constraintStart_toStartOf="@id/textview_temperature"/>
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/viewpager_random_recommendation"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="18dp"
+                android:clipToPadding="false"
+                android:clipChildren="false"
+                app:layout_constraintDimensionRatio="1:0.93"
+                app:layout_constraintTop_toBottomOf="@id/textview_location_tridy_recommend"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_retry_recommendation"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="17dp"
+                android:text="@string/retry_recommendation_home"
+                android:textColor="@color/white"
+                android:fontFamily="@font/notosanskrbold"
+                android:textSize="18sp"
+                app:backgroundTint="@null"
+                app:icon="@drawable/ic_refresh"
+                app:iconGravity="textStart"
+                app:iconPadding="6dp"
+                android:background="@drawable/shape_8dp_green_5bde"
+                android:layout_marginHorizontal="21dp"
+                app:layout_constraintDimensionRatio="1:0.144"
+                app:layout_constraintTop_toBottomOf="@id/viewpager_random_recommendation"
+                app:layout_constraintStart_toStartOf="@id/viewpager_random_recommendation"
+                app:layout_constraintEnd_toEndOf="@id/viewpager_random_recommendation"/>
+
+            <org.journey.tridy_android.customview.SpannableTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/around_recommendation_home"
+                android:textSize="20sp"
+                android:fontFamily="@font/notosanskrregular"
+                android:textColor="@color/tridy_black_1515"
+                android:layout_marginTop="39dp"
+                tridy:span_start="0"
+                tridy:span_end="7"
+                tridy:span_font="@font/notosanskrbold"
+                app:layout_constraintTop_toBottomOf="@id/button_retry_recommendation"
+                app:layout_constraintStart_toStartOf="@id/button_retry_recommendation"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
 </layout>

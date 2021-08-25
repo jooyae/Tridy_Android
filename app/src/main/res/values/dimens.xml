@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="maincard_round_12dp">12dp</dimen>
+    <dimen name="maincard_page_margin">20dp</dimen>
+    <dimen name="maincard_page_width">335dp</dimen>
+</resources>
