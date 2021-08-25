@@ -6,6 +6,7 @@ plugins {
     id(Plugins.SAFE_ARGS)
     id(Plugins.PARCELIZE)
     id(Plugins.GMS_GOOGLE_SERVICES)
+    id("kotlin-android")
 }
 
 android {
@@ -55,6 +56,7 @@ dependencies {
     implementation(AndroidX.FRAGMENT_KTX)
     implementation(AndroidX.ACTIVITY_KTX)
     implementation(Kotlin.KOTLIN_STDLIBS)
+    implementation("androidx.legacy:legacy-support-v4:1.0.0")
     testImplementation(Test.JUNIT)
     androidTestImplementation(Test.AndroidTest.JUNIT_EXT)
     androidTestImplementation(Test.AndroidTest.ESPRESSO_CORE)
