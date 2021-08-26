@@ -8,11 +8,12 @@ import android.util.Log
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import com.kakao.sdk.common.util.Utility
+import dagger.hilt.android.AndroidEntryPoint
 import org.journey.tridy_android.databinding.ActivityMainBinding
 import java.security.MessageDigest
 
 
-
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private lateinit var navController: NavController
@@ -21,16 +22,19 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        navController = (supportFragmentManager.findFragmentById(R.id.fragment_nav_host_main) as NavHostFragment).navController
+        initNavController()
         getAppKeyHash()
+    }
+    private fun initNavController() {
+        val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
+        navController = navHostFragment.navController
     }
     private fun getAppKeyHash() {
         var keyHash = Utility.getKeyHash(this)
         try {
             val info = packageManager.getPackageInfo(packageName, PackageManager.GET_SIGNATURES)
             for (signature in info.signatures) {
-                val md: MessageDigest
-                md = MessageDigest.getInstance("SHA")
+                val md: MessageDigest = MessageDigest.getInstance("SHA")
                 md.update(signature.toByteArray())
                 val something = String(Base64.encode(md.digest(), 0))
                 Log.e("Hash key", something)

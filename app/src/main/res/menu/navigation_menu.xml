@@ -10,7 +10,7 @@
         android:icon="@drawable/ic_jejulife"
         android:title="제주생활"/>
     <item
-        android:id="@+id/timelineFragment"
+        android:id="@+id/timeLineFragment"
         android:icon="@drawable/ic_document"
         android:title="타임라인"/>
     <item
