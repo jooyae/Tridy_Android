@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/item_jeju_life">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageview_jeju_life"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_onevect"
+        android:layout_marginTop="17dp"
+        android:layout_marginLeft="26dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textview_jejulife_title"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="제주 스팟 알바"
+        android:textColor="@color/tridy_black"
+        android:textSize="14sp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/notosanskrbold"
+        app:layout_constraintStart_toEndOf="@id/imageview_jeju_life"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textview_jejulife_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/notosanskrregular"
+        android:text="할 일이 생각나지 않을 때,제주 알바 어때요?"
+        android:textColor="@color/tridy_gray3"
+        android:textSize="12sp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/imageview_jeju_life"
+        app:layout_constraintStart_toStartOf="@+id/textview_jejulife_title"
+        app:layout_constraintTop_toBottomOf="@id/textview_jejulife_title" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

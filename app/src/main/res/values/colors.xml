@@ -10,6 +10,7 @@
     <color name="tridy_white">#FFFFFF</color>
     <color name="tridy_black">#151515</color>
     <color name="tridy_green">#5BDE70</color>
+    <color name="tridy_green2">#5BDE71</color>
     <color name="tridy_gray2">#626262</color>
     <color name="tridy_gray3">#676767</color>
     <color name="tridy_gray4">#8A8A8A</color>
@@ -19,6 +20,9 @@
     <color name="tridy_gray8">#F9F9F9</color>
     <color name="tridy_gray9">#FBFBFB</color>
     <color name="tridy_gray10">#BBBBBB</color>
+    <color name="tridy_gray11">#40000000</color>
+    <color name="tridy_gray12">#F6F6F6</color>
+
 
 
 </resources>

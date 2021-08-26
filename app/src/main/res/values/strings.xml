@@ -10,4 +10,5 @@
     <string name="signup_complete">가입을 완료했어요.\n당신의 여행 성향을 알려주세요!</string>
     <string name="signup_content">여행 성향 테스트를 통해 트리디가 당신에게\n맞춤 여행 정보를 드릴 수 있어요.</string>
     <string name="signup_test_later"><u>다음에 할래요.</u></string>
+    <string name ="welcome_tridy_jejulife">트리디와 함께 제주에서의 활동을 찾아봐요!</string>
 </resources>
